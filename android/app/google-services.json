@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "889876200583",
+    "project_id": "ibs-platform-4518a",
+    "storage_bucket": "ibs-platform-4518a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889876200583:android:dd7cb3825acfa13884cc22",
+        "android_client_info": {
+          "package_name": "uz.ibs.platform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889876200583-icsa0o1pts8j580eihh3ne9lnlcpmmjm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiUfH4tw2Mt44AkwbNPeSi0jSHkoDbVK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889876200583-icsa0o1pts8j580eihh3ne9lnlcpmmjm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "889876200583-03lju1esulb78mivok1hrodslvi5t1jr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "uz.ibs.platform"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
