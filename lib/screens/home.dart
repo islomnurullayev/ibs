@@ -8,6 +8,7 @@ import 'package:ibs/screens/dashboard/dashboard.dart';
 import 'package:ibs/screens/process.dart';
 import 'package:ibs/screens/profile/profile.dart';
 import 'package:ibs/screens/vacancies/vacancies.dart';
+import 'package:ibs/screens/webinar.dart';
 import 'package:ibs/theme/style.dart';
 
 class HomeController extends StatefulWidget {
@@ -36,7 +37,7 @@ class _HomeControllerState extends State<HomeController> {
       case 2:
         return const VacanciesController();
       case 3:
-        return const ProcessScreen();
+        return const Community();
       case 4:
         return const ProfileController();
       default:

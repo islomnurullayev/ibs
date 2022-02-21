@@ -59,17 +59,21 @@ class PortfolioCard extends StatelessWidget {
               portfolio.title,
               style: Style.body1.copyWith(color: Style.colors.white),
             ),
+            const SizedBox(height: 5),
             Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
+                  width: 15,
+                  height: 15,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: Style.colors.yellow,
                   ),
-                  padding: Style.padding4,
-                  child: Text(portfolio.name[0]),
+                  child: Center(child: Text(portfolio.name[0])),
                 ),
-                const SizedBox(width: 10),
+                const SizedBox(width: 5),
                 Text(
                   portfolio.name,
                   style: Style.caption!.copyWith(color: Style.colors.white),
