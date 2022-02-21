@@ -69,7 +69,7 @@ class PortfolioCard extends StatelessWidget {
                   height: 15,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Style.colors.yellow,
+                    color: Style.colors.primary,
                   ),
                   child: Center(child: Text(portfolio.name[0])),
                 ),
