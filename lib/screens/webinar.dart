@@ -235,7 +235,7 @@ class _CommunityState extends State<Community> {
                 ),
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 25),
             Container(
               padding: Style.padding16.copyWith(top: 0, bottom: 0),
               child: Text(

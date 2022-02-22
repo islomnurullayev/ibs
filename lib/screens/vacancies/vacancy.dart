@@ -173,7 +173,7 @@ class _VacancyControllerState extends State<VacancyController> {
           ),
           const SizedBox(height: 5),
           Text(
-            widget.vacancy.obligation,
+            widget.vacancy.obligation.replaceAll("\\n", "\n"),
             style: Style.caption!.copyWith(fontSize: 14),
           ),
           const SizedBox(height: 20),

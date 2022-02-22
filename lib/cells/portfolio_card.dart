@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ibs/model/portfolio.dart';
 import 'package:ibs/theme/style.dart';
@@ -52,34 +53,50 @@ class PortfolioCard extends StatelessWidget {
           ),
         ),
         padding: const EdgeInsets.only(left: 30, top: 10),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Text(
-              portfolio.title,
-              style: Style.body1.copyWith(color: Style.colors.white),
-            ),
-            const SizedBox(height: 5),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  width: 15,
-                  height: 15,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Style.colors.primary,
-                  ),
-                  child: Center(child: Text(portfolio.name[0])),
-                ),
-                const SizedBox(width: 5),
                 Text(
-                  portfolio.name,
-                  style: Style.caption!.copyWith(color: Style.colors.white),
+                  portfolio.title,
+                  style: Style.body1.copyWith(color: Style.colors.white),
+                ),
+                const SizedBox(height: 5),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 15,
+                      height: 15,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Style.colors.primary,
+                      ),
+                      child: Center(child: Text(portfolio.name[0])),
+                    ),
+                    const SizedBox(width: 5),
+                    Text(
+                      portfolio.name,
+                      style: Style.caption!.copyWith(color: Style.colors.white),
+                    ),
+                  ],
                 ),
               ],
             ),
+            const Spacer(),
+            Icon(
+              CupertinoIcons.hand_thumbsup,
+              color: Style.colors.white,
+            ),
+            const SizedBox(width: 8),
+            Icon(
+              Icons.bookmark_border_outlined,
+              color: Style.colors.white,
+            ),
+            const SizedBox(width: 8),
           ],
         ),
       );
